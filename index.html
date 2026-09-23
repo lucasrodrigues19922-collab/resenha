@@ -1,0 +1,1137 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=a2b54227-109a-456d-9932-8c7e07c3cac3
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resenha com os Amigos | Canal, Loja Oficial &amp; Parcerias</title>
+  <meta name="description" content="A resenha oficial de Magé e região. Acompanhe nossos episódios no YouTube, garanta as roupas da loja oficial e anuncie sua marca conosco." />
+  <meta name="theme-color" content="#0F172A" />
+  <!-- Troque SITE_URL pelo domínio próprio quando ele estiver ativo -->
+  <link rel="canonical" href="https://sparkly-kashata-b0c506.netlify.app/" />
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Resenha com os Amigos" />
+  <meta property="og:url" content="https://sparkly-kashata-b0c506.netlify.app/" />
+  <meta property="og:title" content="Resenha com os Amigos | Canal, Loja Oficial &amp; Parcerias" />
+  <meta property="og:description" content="Acompanhe nossos episódios no YouTube, garanta as roupas da loja oficial e anuncie sua marca conosco." />
+  <meta property="og:image" content="https://sparkly-kashata-b0c506.netlify.app/.netlify/images?url=/img/hero.png&amp;w=1200&amp;h=630&amp;fit=cover&amp;fm=jpg&amp;q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Resenha com os Amigos | Canal, Loja Oficial &amp; Parcerias" />
+  <meta name="twitter:description" content="Acompanhe nossos episódios no YouTube, garanta as roupas da loja oficial e anuncie sua marca conosco." />
+  <meta name="twitter:image" content="https://sparkly-kashata-b0c506.netlify.app/.netlify/images?url=/img/hero.png&amp;w=1200&amp;h=630&amp;fit=cover&amp;fm=jpg&amp;q=80" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/.netlify/images?url=/img/hero.png&amp;w=180&amp;h=180&amp;fit=cover&amp;fm=png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Oswald', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#F59E0B',
+              amber: '#D97706',
+              dark: '#0F172A',
+              card: '#1E293B',
+              red: '#DC2626',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* Estilização suave para barras de rolagem */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0F172A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F59E0B;
+    }
+    .pulse-animation {
+      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.85; }
+    }
+    /* Respeita quem prefere menos movimento */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .pulse-animation, .animate-ping, .animate-pulse { animation: none !important; }
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+
+  <!-- Dados estruturados para busca -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Resenha com os Amigos",
+    "description": "Canal de bate-papo, cultura e futebol de Magé e da Baixada Fluminense, com loja oficial de vestuário.",
+    "areaServed": "Magé, Rio de Janeiro, Brasil",
+    "sameAs": [
+      "https://youtube.com/@resenhacomosamigos",
+      "https://www.instagram.com/resenhacomos.amigos",
+      "https://resenhacomosamigos.lojavirtualnuvem.com.br/"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- BARRA DE ANÚNCIO SUPERIOR -->
+  <div id="top-announcement-bar" class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 text-xs sm:text-sm font-bold py-2 px-4 text-center">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <i class="fa-solid fa-fire text-slate-900"></i>
+      <span>NOVIDADE: Loja Oficial com entrega para todo o Brasil &amp; Novos episódios toda semana no YouTube!</span>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO / NAVBAR -->
+  <header id="main-header" class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- LOGO / BRANDING -->
+      <a href="#" id="brand-logo" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-slate-950 font-display font-black text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform shrink-0">
+          <i class="fa-solid fa-microphone-lines"></i>
+        </div>
+        <div>
+          <span class="font-display font-bold text-xl sm:text-2xl tracking-wide uppercase text-white block leading-none">
+            Resenha <span class="text-amber-400">com os Amigos</span>
+          </span>
+          <span class="text-[11px] font-medium text-slate-400 uppercase tracking-widest block mt-0.5">
+            Magé &bull; Baixada Fluminense
+          </span>
+        </div>
+      </a>
+
+      <!-- NAVEGAÇÃO DESKTOP -->
+      <nav id="desktop-nav" class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#sobre" class="hover:text-amber-400 transition-colors">Sobre</a>
+        <a href="#loja" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+          <span>Loja Oficial</span>
+          <span class="bg-amber-500/20 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded border border-amber-500/30">Nuvemshop</span>
+        </a>
+        <a href="#episodios" class="hover:text-amber-400 transition-colors">Episódios</a>
+        <a href="#anuncie" class="hover:text-amber-400 transition-colors">Anuncie Conosco</a>
+        <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- BOTÕES DE AÇÃO DESKTOP -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-red-600/10 hover:bg-red-600/20 text-red-500 font-semibold text-xs transition-colors border border-red-600/30">
+          <i class="fa-brands fa-youtube text-sm"></i>
+          <span>Inscrever-se</span>
+        </a>
+        <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs tracking-wide uppercase transition-all shadow-md shadow-amber-500/20 hover:shadow-amber-500/40">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Acessar Loja</span>
+        </a>
+      </div>
+
+      <!-- BOTÃO MOBILE HAMBÚRGUER -->
+      <button type="button" id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-white shrink-0" aria-label="Abrir menu de navegação" aria-controls="mobile-menu" aria-expanded="false">
+        <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+      </button>
+
+    </div>
+
+    <!-- MENU MOBILE DROPDOWN -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+      <a href="#sobre" class="block py-2 text-base font-medium text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Sobre o Projeto</a>
+      <a href="#loja" class="py-2 text-base font-medium text-slate-200 hover:text-amber-400 border-b border-slate-800/60 flex items-center justify-between">
+        <span>Loja Oficial</span>
+        <span class="bg-amber-500/20 text-amber-400 text-xs font-bold px-2 py-0.5 rounded">Nuvemshop</span>
+      </a>
+      <a href="#episodios" class="block py-2 text-base font-medium text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Episódios &amp; Vídeos</a>
+      <a href="#anuncie" class="block py-2 text-base font-medium text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Anuncie Conosco</a>
+      <a href="#faq" class="block py-2 text-base font-medium text-slate-200 hover:text-amber-400 border-b border-slate-800/60">Dúvidas Frequentes</a>
+
+      <div class="pt-3 grid grid-cols-2 gap-2">
+        <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 rounded-lg bg-red-600 text-white font-bold text-xs uppercase">
+          <i class="fa-brands fa-youtube"></i> YouTube
+        </a>
+        <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 py-3 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs uppercase">
+          <i class="fa-solid fa-bag-shopping"></i> Ver Loja
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION DE ALTO IMPACTO (MOBILE-FIRST) -->
+  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    <!-- Luzes de fundo decorativas -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-72 h-72 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Texto & Conversão Principal -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+
+          <!-- Badge de Categoria -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-amber-400 text-xs sm:text-sm font-semibold shadow-inner">
+            <span class="flex h-2 w-2 rounded-full bg-amber-400 animate-ping"></span>
+            <i class="fa-solid fa-podcast"></i>
+            <span>O Bate-papo &amp; Lifestyle Oficial de Magé - RJ</span>
+          </div>
+
+          <!-- Headline Poderosa -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-display tracking-tight text-white uppercase leading-none">
+            A autêntica resenha <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">
+              Carioca, Futebol &amp; Cultura
+            </span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Acompanhe nossos bate-papos exclusivos no YouTube com personalidades de Magé, futebol raiz e os melhores momentos. Adquira bonés e camisetas oficiais na nossa loja e vista a resenha!
+          </p>
+
+          <!-- CTAs Primários -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-sm sm:text-base tracking-wider uppercase transition-all shadow-xl shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5">
+              <i class="fa-solid fa-cart-shopping text-lg"></i>
+              <span>Comprar na Loja Oficial</span>
+            </a>
+
+            <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-100 font-bold text-sm sm:text-base border border-slate-700/80 hover:border-slate-600 transition-all hover:-translate-y-0.5">
+              <i class="fa-brands fa-youtube text-red-500 text-xl"></i>
+              <span>Assistir no YouTube</span>
+            </a>
+          </div>
+
+          <!-- Métricas Rápidas -->
+          <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800/80">
+            <div>
+              <div class="text-2xl sm:text-3xl font-display font-black text-amber-400">+110</div>
+              <div class="text-xs text-slate-400 font-medium">Vídeos no Canal</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-display font-black text-white">Magé &amp; RJ</div>
+              <div class="text-xs text-slate-400 font-medium">Público Fiel</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-display font-black text-amber-400">100%</div>
+              <div class="text-xs text-slate-400 font-medium">Loja Nuvemshop</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-display font-black text-white">4.9 ★</div>
+              <div class="text-xs text-slate-400 font-medium">Satisfação</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card Visual em Destaque (Thumbnail Hero) -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-amber-500 to-red-600 opacity-30 blur-xl"></div>
+
+            <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-4 sm:p-5 shadow-2xl">
+              <!-- Header do Card -->
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3 text-xs">
+                <span class="flex items-center gap-2 text-slate-300 font-medium">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+                  Canal Oficial no Ar
+                </span>
+                <span class="text-amber-400 font-semibold">@ResenhacomosAmigos</span>
+              </div>
+
+              <!-- Imagem de Destaque -->
+              <div class="relative rounded-xl overflow-hidden aspect-video bg-slate-950 group">
+                <img src="/.netlify/images?url=/img/hero.png&w=800&h=450&fit=cover&fm=webp&q=80" alt="Amigos gravando o podcast Resenha com os Amigos em volta da mesa com microfones" width="800" height="450" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+                <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" aria-label="Assistir os episódios no YouTube">
+                  <div class="w-16 h-16 rounded-full bg-red-600/90 text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-play text-xl ml-1"></i>
+                  </div>
+                </a>
+
+                <div class="absolute bottom-3 left-3 right-3 text-left pointer-events-none">
+                  <span class="bg-amber-500 text-slate-950 font-bold text-[10px] uppercase px-2 py-0.5 rounded">Em Destaque</span>
+                  <p class="text-sm font-bold text-white mt-1 line-clamp-1">Entrevistas exclusivas e histórias que você só vê aqui</p>
+                </div>
+              </div>
+
+              <!-- Mini Showcase de Produto Integrado -->
+              <div class="mt-4 p-3 rounded-xl bg-slate-950/80 border border-slate-800/80 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-12 h-12 rounded-lg bg-slate-800 overflow-hidden flex-shrink-0">
+                    <img src="/.netlify/images?url=/img/bone.png&w=150&h=150&fit=cover&fm=webp&q=80" alt="Boné trucker oficial Resenha com os Amigos" width="150" height="150" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="min-w-0">
+                    <h2 class="text-xs font-bold text-white line-clamp-1">Boné Trucker Oficial Resenha</h2>
+                    <p class="text-[11px] text-amber-400 font-semibold">R$ 79,90 na Nuvemshop</p>
+                  </div>
+                </div>
+                <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold shrink-0 transition-colors">
+                  Garantir
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE PILARES / SERVIÇOS & PROPOSTAS DE VALOR -->
+  <section id="sobre" class="py-16 md:py-24 bg-slate-900/60 border-y border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Nossa Estrutura</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Muito mais que um canal, um movimento
+        </h3>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+          Unimos produção audiovisual com identidade local, produtos de alta qualidade e oportunidades de patrocínio com alto retorno comercial.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Pilar 1 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/40 transition-all hover:-translate-y-1 group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-red-600/10 text-red-500 border border-red-500/20 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <h4 class="text-xl font-display font-bold text-white uppercase tracking-wide">Canal no YouTube</h4>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Mais de 110 vídeos abordando turismo em Magé, várzea de futebol, bate-papos sinceros e resenha autêntica.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-red-400 hover:text-red-300 inline-flex items-center gap-2">
+              <span>Acessar Canal</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/40 transition-all hover:-translate-y-1 group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h4 class="text-xl font-display font-bold text-white uppercase tracking-wide">Loja Nuvemshop</h4>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Moda casual premium com a marca Resenha com os Amigos. Bonés trucker, camisetas confortáveis e copos térmicos.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-2">
+              <span>Visitar Loja</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/40 transition-all hover:-translate-y-1 group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h4 class="text-xl font-display font-bold text-white uppercase tracking-wide">Anuncie Conosco</h4>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Divulgue seu comércio, loja ou serviço diretamente para o público regional de Magé e municípios vizinhos.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="#anuncie" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-2">
+              <span>Ver Opções de Mídia</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilar 4 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-amber-500/40 transition-all hover:-translate-y-1 group flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 border border-pink-500/20 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <h4 class="text-xl font-display font-bold text-white uppercase tracking-wide">Rede &amp; Comunidade</h4>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Interação diária no Instagram (@resenhacomos.amigos), bastidores das gravações, enquetes e sorteios.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-900 mt-6">
+            <a href="https://www.instagram.com/resenhacomos.amigos" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-pink-400 hover:text-pink-300 inline-flex items-center gap-2">
+              <span>Seguir no Instagram</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DA LOJA OFICIAL (NUVEMSHOP VITRINE EM DESTAQUE) -->
+  <section id="loja" class="py-16 md:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Cabeçalho da Seção -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-amber-400 uppercase tracking-wider">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Loja Oficial Verificada</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+            Coleção Oficial Resenha
+          </h2>
+          <p class="text-slate-400 text-sm max-w-xl">
+            Peças desenvolvidas com alto padrão de acabamento. Compre online com segurança na Nuvemshop e receba na sua casa.
+          </p>
+        </div>
+
+        <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm uppercase tracking-wide transition-all shadow-lg shadow-amber-500/20 shrink-0">
+          <span>Ver Todo o Catálogo</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Grid de Produtos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Produto 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div class="relative aspect-square bg-slate-950 overflow-hidden">
+            <img src="/.netlify/images?url=/img/bone.png&w=600&h=600&fit=cover&fm=webp&q=80" alt="Boné trucker oficial Resenha com os Amigos" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow">
+              Mais Vendido
+            </span>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 uppercase tracking-wider">Acessórios</span>
+              <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                Boné Trucker Oficial Resenha com os Amigos
+              </h3>
+            </div>
+            <div class="pt-3 border-t border-slate-800">
+              <div class="flex items-baseline gap-2">
+                <span class="text-lg font-black text-amber-400">R$ 79,90</span>
+                <span class="text-xs text-slate-500 line-through">R$ 99,90</span>
+              </div>
+              <span class="text-[11px] text-slate-400 block mt-0.5">em até 3x sem juros</span>
+
+              <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wide transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-cart-plus"></i> Comprar na Nuvemshop
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div class="relative aspect-square bg-slate-950 overflow-hidden">
+            <img src="/.netlify/images?url=/img/camiseta.png&w=600&h=600&fit=cover&fm=webp&q=80" alt="Camiseta de algodão premium Resenha com os Amigos" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow">
+              Edição Especial
+            </span>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 uppercase tracking-wider">Vestuário</span>
+              <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                Camiseta Algodão Premium Estampa Resenha
+              </h3>
+            </div>
+            <div class="pt-3 border-t border-slate-800">
+              <div class="flex items-baseline gap-2">
+                <span class="text-lg font-black text-amber-400">R$ 89,90</span>
+                <span class="text-xs text-slate-500 line-through">R$ 119,90</span>
+              </div>
+              <span class="text-[11px] text-slate-400 block mt-0.5">em até 3x sem juros</span>
+
+              <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wide transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-cart-plus"></i> Comprar na Nuvemshop
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div class="relative aspect-square bg-slate-950 overflow-hidden">
+            <img src="/.netlify/images?url=/img/copo.png&w=600&h=600&fit=cover&fm=webp&q=80" alt="Copo térmico de inox Resenha com os Amigos" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 bg-slate-800 text-amber-400 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow border border-amber-500/30">
+              Indispensável
+            </span>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 uppercase tracking-wider">Acessórios</span>
+              <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                Copo Térmico Inox Resenha com os Amigos 473ml
+              </h3>
+            </div>
+            <div class="pt-3 border-t border-slate-800">
+              <div class="flex items-baseline gap-2">
+                <span class="text-lg font-black text-amber-400">R$ 69,90</span>
+                <span class="text-xs text-slate-500 line-through">R$ 89,90</span>
+              </div>
+              <span class="text-[11px] text-slate-400 block mt-0.5">em até 2x sem juros</span>
+
+              <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wide transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-cart-plus"></i> Comprar na Nuvemshop
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-slate-700 transition-all flex flex-col justify-between">
+          <div class="relative aspect-square bg-slate-950 overflow-hidden">
+            <img src="/.netlify/images?url=/img/moletom.png&w=600&h=600&fit=cover&fm=webp&q=80" alt="Moletom canguru flanelado preto Resenha com os Amigos" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-md shadow">
+              Lançamento
+            </span>
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] text-slate-400 uppercase tracking-wider">Vestuário</span>
+              <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+                Moletom Canguru Flanelado Resenha Preto
+              </h3>
+            </div>
+            <div class="pt-3 border-t border-slate-800">
+              <div class="flex items-baseline gap-2">
+                <span class="text-lg font-black text-amber-400">R$ 169,90</span>
+                <span class="text-xs text-slate-500 line-through">R$ 199,90</span>
+              </div>
+              <span class="text-[11px] text-slate-400 block mt-0.5">em até 4x sem juros</span>
+
+              <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="mt-4 w-full py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-amber-500 hover:text-slate-950 text-white font-bold text-xs uppercase tracking-wide transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-cart-plus"></i> Comprar na Nuvemshop
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner de Confiança da Loja -->
+      <div class="mt-12 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="flex flex-col items-center space-y-2">
+          <i class="fa-solid fa-truck-fast text-2xl text-amber-400"></i>
+          <h4 class="text-sm font-bold text-white uppercase">Envio Seguro</h4>
+          <p class="text-xs text-slate-400">Entrega para todo o Brasil com código de rastreamento dos Correios</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <i class="fa-solid fa-lock text-2xl text-amber-400"></i>
+          <h4 class="text-sm font-bold text-white uppercase">Pagamento Blindado</h4>
+          <p class="text-xs text-slate-400">Plataforma oficial Nuvemshop com Pix e cartão de crédito</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <i class="fa-solid fa-headset text-2xl text-amber-400"></i>
+          <h4 class="text-sm font-bold text-white uppercase">Suporte via WhatsApp</h4>
+          <p class="text-xs text-slate-400">Tire suas dúvidas diretamente com nossa equipe de atendimento</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE EPISÓDIOS & VÍDEOS (YOUTUBE CHANNEL) -->
+  <section id="episodios" class="py-16 md:py-24 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-red-500 uppercase tracking-wider">
+            <i class="fa-brands fa-youtube"></i>
+            <span>Conteúdo Oficial no YouTube</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+            Episódios &amp; Histórias Recentes
+          </h2>
+          <p class="text-slate-400 text-sm max-w-xl">
+            Inscreva-se no canal para acompanhar todos os lançamentos, entrevistas especiais e os guias sobre a nossa cidade.
+          </p>
+        </div>
+
+        <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm uppercase tracking-wide transition-all shadow-lg shadow-red-600/20 shrink-0">
+          <i class="fa-brands fa-youtube text-lg"></i>
+          <span>Inscrever-se no Canal</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Video 1 -->
+        <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="group bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-red-500/40 transition-all hover:-translate-y-1 block">
+          <div class="relative aspect-video bg-slate-900 overflow-hidden">
+            <img src="/.netlify/images?url=/img/ep-mage.png&w=600&h=338&fit=cover&fm=webp&q=80" alt="Serra e cachoeiras de Magé no episódio de turismo" width="600" height="338" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play ml-1"></i>
+              </div>
+            </div>
+            <span class="absolute bottom-2 right-2 bg-slate-950/80 px-2 py-0.5 rounded text-[11px] font-mono text-white font-semibold">18:24</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="text-amber-400 font-semibold">Turismo &amp; Magé</span>
+              <span>Episódio Completo</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+              Guia Turístico de Magé: Lugares Históricos &amp; Belezas Naturais
+            </h3>
+            <p class="text-xs text-slate-400 line-clamp-2">
+              Um passeio completo pelos pontos turísticos, cachoeiras e história de Magé contados por quem vive a cidade.
+            </p>
+          </div>
+        </a>
+
+        <!-- Video 2 -->
+        <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="group bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-red-500/40 transition-all hover:-translate-y-1 block">
+          <div class="relative aspect-video bg-slate-900 overflow-hidden">
+            <img src="/.netlify/images?url=/img/ep-varzea.png&w=600&h=338&fit=cover&fm=webp&q=80" alt="Campo de futebol de várzea ao pôr do sol" width="600" height="338" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play ml-1"></i>
+              </div>
+            </div>
+            <span class="absolute bottom-2 right-2 bg-slate-950/80 px-2 py-0.5 rounded text-[11px] font-mono text-white font-semibold">32:10</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="text-amber-400 font-semibold">Futebol de Várzea</span>
+              <span>Episódio Especial</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+              A paixão do Torcedor do Mundo Novo e os Campeonatos Locais
+            </h3>
+            <p class="text-xs text-slate-400 line-clamp-2">
+              Muita resenha com os torcedores mais apaixonados da região, bastidores e histórias engraçadas dos campos de terra.
+            </p>
+          </div>
+        </a>
+
+        <!-- Video 3 -->
+        <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="group bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-red-500/40 transition-all hover:-translate-y-1 block">
+          <div class="relative aspect-video bg-slate-900 overflow-hidden">
+            <img src="/.netlify/images?url=/img/ep-entrevista.png&w=600&h=338&fit=cover&fm=webp&q=80" alt="Entrevista no estúdio com microfone em mão" width="600" height="338" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-play ml-1"></i>
+              </div>
+            </div>
+            <span class="absolute bottom-2 right-2 bg-slate-950/80 px-2 py-0.5 rounded text-[11px] font-mono text-white font-semibold">45:15</span>
+          </div>
+          <div class="p-5 space-y-2">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="text-amber-400 font-semibold">Entrevista Exclusiva</span>
+              <span>Vida &amp; Superação</span>
+            </div>
+            <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
+              A vida é feita de aprendizado: Histórias Reais da Nossa Gente
+            </h3>
+            <p class="text-xs text-slate-400 line-clamp-2">
+              Conversas inspiradoras com quem faz a diferença no dia a dia da Baixada Fluminense.
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE ANUNCIE CONOSCO / PARCERIAS COMERCIAIS (ALTA CONVERSÃO B2B LOCAL) -->
+  <section id="anuncie" class="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-transparent border border-amber-500/30 rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+
+        <!-- Elemento de fundo -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative">
+
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase tracking-wider border border-amber-500/30">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Oportunidade para Empresas &amp; Comércios Locais</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl font-black font-display tracking-tight text-white uppercase leading-none">
+              Destaque sua marca para milhares de pessoas em Magé
+            </h2>
+
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+              O <strong class="text-white">Resenha com os Amigos</strong> é o canal de maior identificação popular na região. Associar sua empresa ao nosso programa gera credibilidade imediata e atrai clientes reais para o seu negócio.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                <span class="text-sm text-slate-200 font-medium">Merchandising &amp; Banner no Cenário</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                <span class="text-sm text-slate-200 font-medium">Menção ao vivo em cada episódio</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                <span class="text-sm text-slate-200 font-medium">Collab &amp; Stories no Instagram Oficial</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+                <span class="text-sm text-slate-200 font-medium">Ações de sorteio e cupons da loja</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
+              <!-- CONTATO: troque o número nos links data-wa-link por telefone oficial (formato 55 + DDD + numero) -->
+              <a data-wa-link data-wa-text="Olá! Quero conhecer os planos de patrocínio do Resenha com os Amigos." href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm sm:text-base uppercase tracking-wider transition-all shadow-xl shadow-emerald-500/25">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Solicitar Mídia Kit no WhatsApp</span>
+              </a>
+              <span class="text-xs text-slate-400">Atendimento comercial rápido</span>
+            </div>
+
+          </div>
+
+          <!-- Mídia Kit Card Lateral -->
+          <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+            <h3 class="text-lg font-bold font-display text-white uppercase flex items-center justify-between gap-3">
+              <span>Formatos de Parceria</span>
+              <span class="text-xs text-amber-400 font-normal shrink-0">Temporada 2026</span>
+            </h3>
+
+            <div class="space-y-4 text-sm">
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+                <div class="flex justify-between items-center font-bold text-white mb-1">
+                  <span>Cota Apoio Local</span>
+                  <span class="text-amber-400 text-xs">Acessível</span>
+                </div>
+                <p class="text-xs text-slate-400">Logotipo na descrição do YouTube, link oficial e menção nos créditos.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-950 border border-amber-500/40 relative">
+                <span class="absolute -top-2.5 right-4 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded">Mais Procurada</span>
+                <div class="flex justify-between items-center font-bold text-white mb-1">
+                  <span>Cota Master Resenha</span>
+                  <span class="text-amber-400 text-xs">Exclusiva</span>
+                </div>
+                <p class="text-xs text-slate-400">Copo personalizado na mesa, menção ao vivo em áudio/vídeo e post exclusivo no Instagram.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-950 border border-slate-800">
+                <div class="flex justify-between items-center font-bold text-white mb-1">
+                  <span>Patrocínio de Episódio</span>
+                  <span class="text-amber-400 text-xs">Pontual</span>
+                </div>
+                <p class="text-xs text-slate-400">Apresentador exclusivo do episódio especial com chamada de abertura de 30 segundos.</p>
+              </div>
+            </div>
+
+            <div class="pt-2 text-center">
+              <a data-wa-link data-wa-text="Olá! Gostaria de mais detalhes sobre as cotas de patrocínio." href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-amber-400 hover:underline">
+                Converse com nosso produtor comercial &rarr;
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE DEPOIMENTOS & PROVA SOCIAL -->
+  <section id="depoimentos" class="py-16 md:py-24 bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Depoimentos &amp; Comunidade</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Quem acompanha e veste a nossa marca recomenda
+        </h3>
+        <p class="text-slate-400 text-sm sm:text-base">
+          A opinião de quem vive a resenha no dia a dia, consome os conteúdos e usa nossos produtos oficiais.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Depoimento 1 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1" role="img" aria-label="Avaliação 5 de 5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed italic">
+              &ldquo;Melhor conteúdo sobre a nossa cidade de Magé! Acompanho todos os episódios no YouTube e a resenha sobre o futebol raiz é sem igual. Parabéns pela iniciativa!&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-amber-600 to-amber-400 text-slate-950 font-display font-black flex items-center justify-center shrink-0" aria-hidden="true">CE</div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Carlos Eduardo Silva</h4>
+              <p class="text-xs text-slate-400">Morador de Piabetá / Magé</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1" role="img" aria-label="Avaliação 5 de 5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed italic">
+              &ldquo;Comprei o boné e a camiseta na Nuvemshop. Chegou super rápido aqui no Rio, tecido de extrema qualidade e caimento perfeito. Recomendo demais!&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-slate-700 to-slate-500 text-white font-display font-black flex items-center justify-center shrink-0" aria-hidden="true">RA</div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Rodrigo Almeida</h4>
+              <p class="text-xs text-slate-400">Cliente da Loja Virtual</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex text-amber-400 text-sm gap-1" role="img" aria-label="Avaliação 5 de 5 estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed italic">
+              &ldquo;Anunciamos nosso restaurante nos episódios e o retorno de clientes da região foi imediato. O engajamento com a galera da cidade é 100% verdadeiro e comprovado.&rdquo;
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-900">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-emerald-600 to-emerald-400 text-slate-950 font-display font-black flex items-center justify-center shrink-0" aria-hidden="true">MB</div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Marcelo Barreto</h4>
+              <p class="text-xs text-slate-400">Comerciante &amp; Parceiro</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE FAQ (PERGUNTAS FREQUENTES COM ACCORDION) -->
+  <section id="faq" class="py-16 md:py-24 bg-slate-950 border-t border-slate-800/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12 space-y-3">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Tire Suas Dúvidas</h2>
+        <h3 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white uppercase">
+          Perguntas Frequentes
+        </h3>
+        <p class="text-slate-400 text-sm">
+          Tudo o que você precisa saber sobre a nossa loja, canal e parcerias comerciais.
+        </p>
+      </div>
+
+      <!-- Accordion Container -->
+      <div class="space-y-4" id="faq-accordion-container">
+
+        <!-- FAQ 1 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden transition-colors">
+          <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500" aria-expanded="false">
+            <span class="text-sm sm:text-base">Como faço para comprar os produtos da Loja Oficial?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Você pode comprar com total segurança diretamente na nossa loja virtual hospedada na Nuvemshop (<a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="text-amber-400 underline font-medium">resenhacomosamigos.lojavirtualnuvem.com.br</a>). Aceitamos Pix, cartão de crédito em até várias vezes e boleto bancário.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden transition-colors">
+          <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500" aria-expanded="false">
+            <span class="text-sm sm:text-base">Vocês entregam para todo o Brasil?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Sim! Enviamos para todo o território nacional através dos Correios e transportadoras parceiras, com código de rastreamento para você acompanhar cada etapa até a entrega no seu endereço.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden transition-colors">
+          <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500" aria-expanded="false">
+            <span class="text-sm sm:text-base">Onde posso assistir aos episódios e novos lançamentos?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Todos os episódios completos, cortes e novidades são postados no nosso canal oficial do YouTube (<a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="text-red-400 underline font-medium">@ResenhacomosAmigos</a>). Inscreva-se e ative as notificações para não perder nenhum lançamento semanal.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden transition-colors">
+          <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500" aria-expanded="false">
+            <span class="text-sm sm:text-base">Minha empresa ou comércio pode anunciar no Resenha com os Amigos?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Com certeza! Oferecemos planos de patrocínio com exibição de marca nos vídeos, menções ao vivo, posts colaborativos no Instagram e ações promocionais com a nossa audiência em Magé. Clique no botão de WhatsApp para receber nosso Mídia Kit com valores e formatos.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl overflow-hidden transition-colors">
+          <button type="button" class="faq-toggle w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500" aria-expanded="false">
+            <span class="text-sm sm:text-base">Como faço para sugerir uma pauta ou participar como convidado?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-300 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+            Adoramos ouvir boas histórias de Magé e região! Envie uma mensagem direta no nosso Instagram (<a href="https://www.instagram.com/resenhacomos.amigos" target="_blank" rel="noopener noreferrer" class="text-pink-400 underline font-medium">@resenhacomos.amigos</a>) ou através do WhatsApp com sua história e contatos.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer id="footer" class="bg-slate-950 border-t border-slate-900 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-900">
+
+        <!-- Coluna 1: Info da Marca -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-black text-lg shrink-0">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <span class="font-display font-bold text-xl uppercase tracking-wider text-white">
+              Resenha <span class="text-amber-400">com os Amigos</span>
+            </span>
+          </div>
+          <p class="text-slate-400 max-w-md text-xs sm:text-sm leading-relaxed">
+            O canal que dá voz às pessoas, à cultura e à alegria de Magé e da Baixada Fluminense. Vista nossa marca e participe da maior resenha da região.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-red-500 hover:bg-red-600 hover:text-white transition-all" title="YouTube" aria-label="YouTube">
+              <i class="fa-brands fa-youtube text-sm"></i>
+            </a>
+            <a href="https://www.instagram.com/resenhacomos.amigos" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-500 hover:bg-pink-600 hover:text-white transition-all" title="Instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 hover:bg-amber-500 hover:text-slate-950 transition-all" title="Loja Virtual Nuvemshop" aria-label="Loja Virtual Nuvemshop">
+              <i class="fa-solid fa-bag-shopping text-sm"></i>
+            </a>
+            <a data-wa-link href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 transition-all" title="WhatsApp" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Links Rápidos -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">Navegação</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#sobre" class="hover:text-amber-400 transition-colors">Sobre o Projeto</a></li>
+            <li><a href="#loja" class="hover:text-amber-400 transition-colors">Loja Nuvemshop</a></li>
+            <li><a href="#episodios" class="hover:text-amber-400 transition-colors">Episódios &amp; Vídeos</a></li>
+            <li><a href="#anuncie" class="hover:text-amber-400 transition-colors">Anuncie Conosco</a></li>
+            <li><a href="#faq" class="hover:text-amber-400 transition-colors">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Links Oficiais -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider">Canais Oficiais</h4>
+          <ul class="space-y-2 text-xs">
+            <li>
+              <a href="https://youtube.com/@resenhacomosamigos" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition-colors flex items-center gap-1.5">
+                <i class="fa-brands fa-youtube text-red-500"></i> YouTube (@ResenhacomosAmigos)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/resenhacomos.amigos" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                <i class="fa-brands fa-instagram text-pink-500"></i> Instagram (@resenhacomos.amigos)
+              </a>
+            </li>
+            <li>
+              <a href="https://resenhacomosamigos.lojavirtualnuvem.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-store text-amber-500"></i> Loja Nuvemshop
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <p>&copy; <span id="footer-year">2026</span> Resenha com os Amigos. Todos os direitos reservados. Magé - RJ.</p>
+        <p class="flex items-center gap-1">
+          Feito com <i class="fa-solid fa-heart text-amber-500"></i> para a comunidade.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP DE ALTA CONVERSÃO (FIXO) -->
+  <div id="floating-whatsapp-container" class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+
+    <!-- Tooltip chamativo opcional -->
+    <a data-wa-link data-wa-text="Olá! Vim pelo site oficial do Resenha com os Amigos e gostaria de informações." href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-2 bg-slate-900/95 border border-slate-700/80 text-white text-xs font-semibold px-3 py-2 rounded-full shadow-2xl backdrop-blur-sm hover:border-emerald-500 transition-colors">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+      <span>Fale conosco no WhatsApp</span>
+    </a>
+
+    <!-- Botão com ícone pulsante -->
+    <a data-wa-link data-wa-text="Olá! Vim pelo site oficial do Resenha com os Amigos e gostaria de informações." href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer" id="floating-whatsapp-btn" class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 flex items-center justify-center shadow-2xl shadow-emerald-500/40 hover:scale-110 transition-all duration-300 relative group pulse-animation" aria-label="Abrir conversa no WhatsApp">
+      <i class="fa-brands fa-whatsapp text-3xl sm:text-4xl text-slate-950"></i>
+      <!-- Badge de 1 mensagem -->
+      <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-600 text-white text-[10px] font-black rounded-full flex items-center justify-center border-2 border-slate-950">1</span>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT EMBUTIDO (ACCORDION, MENU MOBILE & UTILITÁRIOS) -->
+  <script>
+    // 0. Contato central de WhatsApp — troque apenas esta linha para atualizar o site inteiro
+    const WHATSAPP_NUMERO = '5521999999999'; // formato: 55 + DDD + número, só dígitos
+
+    document.querySelectorAll('[data-wa-link]').forEach(link => {
+      const texto = link.dataset.waText;
+      link.href = 'https://wa.me/' + WHATSAPP_NUMERO + (texto ? '?text=' + encodeURIComponent(texto) : '');
+    });
+
+    // 1. Menu Mobile Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileIcon = document.getElementById('mobile-menu-icon');
+
+    if (mobileBtn && mobileMenu) {
+      const fecharMenu = () => {
+        mobileMenu.classList.add('hidden');
+        mobileIcon.classList.remove('fa-xmark');
+        mobileIcon.classList.add('fa-bars');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      };
+
+      mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          mobileIcon.classList.remove('fa-bars');
+          mobileIcon.classList.add('fa-xmark');
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          fecharMenu();
+        }
+      });
+
+      // Fechar menu ao clicar em um link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', fecharMenu);
+      });
+    }
+
+    // 2. Accordion Interativo do FAQ
+    const faqButtons = document.querySelectorAll('.faq-toggle');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Fecha todos os outros itens para um efeito sanfona limpo
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-toggle').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          const i = b.querySelector('i');
+          i.classList.remove('rotate-180', 'text-amber-400');
+          i.classList.add('text-slate-400');
+        });
+
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          button.setAttribute('aria-expanded', 'true');
+          icon.classList.add('rotate-180', 'text-amber-400');
+          icon.classList.remove('text-slate-400');
+        }
+      });
+    });
+
+    // 3. Efeito de scroll suave na Navbar
+    const header = document.getElementById('main-header');
+    if (header) {
+      const aoRolar = () => {
+        if (window.scrollY > 20) {
+          header.classList.add('shadow-xl', 'bg-slate-950/95');
+        } else {
+          header.classList.remove('shadow-xl', 'bg-slate-950/95');
+        }
+      };
+      window.addEventListener('scroll', aoRolar, { passive: true });
+      aoRolar();
+    }
+
+    // 4. Ano dinâmico no rodapé
+    const anoEl = document.getElementById('footer-year');
+    if (anoEl) anoEl.textContent = new Date().getFullYear();
+  </script>
+
+<script async src="/.netlify/scripts/ar" data-netlify-deploy-id="6ab21f5eaf5d1649cc4055ee" data-netlify-site-id="a2b54227-109a-456d-9932-8c7e07c3cac3" data-agent-runner-id="6ab21c798ee6b501efe24d64"></script>
+</body>
+</html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="a2b54227-109a-456d-9932-8c7e07c3cac3" data-app-host="app.netlify.com"></script>
